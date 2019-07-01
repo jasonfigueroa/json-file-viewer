@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { City } from './city';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'json-file-viewer';
+  
+  title = 'JSON File Viewer';
+
+  public cities: City[] = [];
+
+  onSearchSubmitted(message: string): void {
+    console.log(message);
+  }
+
 }

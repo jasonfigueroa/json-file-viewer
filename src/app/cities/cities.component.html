@@ -1,0 +1,13 @@
+<h1>Cities</h1>
+<div *ngIf="cities && cities.length">
+  <div *ngFor="let city of cities">
+    <h2>City</h2>
+    <p>id: {{city.id}}</p>
+    <p>name: {{city.name}}</p>
+    <p>country: {{city.country}}</p>
+    <h3>Coordinates</h3>
+    <p>latitude: {{city.coord.lat}}</p>
+    <p>longitude: {{city.coord.lon}}</p>
+    <hr>
+  </div>
+</div>
